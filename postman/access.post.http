@@ -1,0 +1,4 @@
+// sign up
+// install REST client or HTTP client extension to run this request
+
+POST http://localhost:5000/v1/api/shop/signup

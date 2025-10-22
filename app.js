@@ -15,13 +15,7 @@ app.use(compression());
 require('./dbs/init.mongodb');
 checkOverload();
 //init routes
-app.get('/', (req, res) => {
-    const demoStr = "demo string for compression";
-    res.status(200).json({
-        message: 'Welcome to the E-commerce API',
-        metaData : demoStr.repeat(1000)
-    });
-});
+app.use('', require('./routes'));
 //handle errors
 
 module.exports = app;
